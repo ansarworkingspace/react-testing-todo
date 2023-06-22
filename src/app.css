@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
   }
@@ -85,5 +85,114 @@
     font-style: normal;
     color: grey;
   }
+   */
   
+
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f6f6f6;
+    font-family: Arial, sans-serif;
+  }
+  
+  .app {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app .mainHeading h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .app .subHeading h2 {
+    text-align: center;
+    color: #777;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .app .input {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .app .input input {
+    flex: 1;
+    height: 40px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app .input i {
+    cursor: pointer;
+    font-size: 20px;
+    color: #555;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .app .input i:hover {
+    color: #333;
+  }
+  
+  .app .todos {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .app .todos .todo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .app .todos .todo .left {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .app .todos .todo .left input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .app .todos .todo .left p {
+    color: #333;
+    font-size: 16px;
+  }
+  
+  .app .todos .todo .right i {
+    cursor: pointer;
+    color: #bbb;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .app .todos .todo .right i:hover {
+    color: #999;
+  }
   
